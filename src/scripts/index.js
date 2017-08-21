@@ -1,6 +1,11 @@
 import {render}             from 'react-dom';
 import DataActions          from './flux/actions/DataActions.js'
+require('../css/style.css');
+require('../css/responsive.css');
+// require('../css/font-awesome.min.css');
 
+
+import NavMenu              from './components/NavMenu.js';
 import Home                 from './components/Home.js';
 import About                from './components/About.js';
 import Menu                 from './components/Menu.js';
@@ -13,7 +18,7 @@ import Press                from './components/Press.js';
 import PrivateDining        from './components/PrivateDining.js';
 import SplashPage           from './components/SplashPage.js';
 import TheDen               from './components/TheDen.js';
-
+import Footer               from './components/Footer.js';
 
 import {
     BrowserRouter as Router,
@@ -21,6 +26,7 @@ import {
     Redirect,
     Switch
 } from 'react-router-dom';
+
 
 class AppInitializer {
 
@@ -61,6 +67,7 @@ class AppInitializer {
                         {this.buildRoutes(response)}
                         <Route render={() => { return <Redirect to="/" /> }} />
                     </Switch>
+                    <Footer />
                 </div>
             </Router>
 

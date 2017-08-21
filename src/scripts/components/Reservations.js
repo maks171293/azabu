@@ -4,10 +4,11 @@ class Reservations extends React.Component{
   render(){
     let page = DataStore.getPageBySlug('reservations');
     return (
-      <div>
-        <h1>{page.title.rendered}</h1>
+      <div className="main__wrap main__wrap-reserve">
+        <div className="main__content main__content-pres">
         <div dangerouslySetInnerHTML={ {__html: page.content.rendered} } />
       </div>
+    </div>
     )
   }
 }
