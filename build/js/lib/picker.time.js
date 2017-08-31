@@ -968,10 +968,10 @@ TimePicker.defaults = (function( prefix ) {
         clear: 'Clear',
 
         // The format to show on the `input` element
-        format: 'h:i A',
+        format: 'h A',
 
         // The interval between each time
-        interval: 30,
+        interval: 60,
 
         // Picker close behavior
         closeOnSelect: true,
