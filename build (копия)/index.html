@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Azabu</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="/js/lib/themes/default.css" id="theme_base">
+  <link rel="stylesheet" href="/js/lib/themes/default.date.css" id="theme_date">
+  <link rel="stylesheet" href="/js/lib/themes/default.time.css" id="theme_time">
+</head>
+<body>
+
+  <div id="app"></div>
+
+<script type="text/javascript" src="/bundle.js?297bf99cc0da08c0aab8"></script>
+<script src="https://use.fontawesome.com/8ea9341af7.js"></script>  
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="/js/nav.js"></script>
+<script type="text/javascript" src="/js/lib/picker.js"></script>
+<script type="text/javascript"src="/js/lib/picker.date.js"></script>
+<script type="text/javascript" src="/js/lib/picker.time.js"></script>
+  <script>
+	window.onload = {
+      $('.datepicker').pickadate();
+      
+      $('.datepicker').pickadate({
+        container: '#rtb-date'
+});
+      
+      $('.timepicker').pickatime()}
+    </script>
+  </body>
+</html>

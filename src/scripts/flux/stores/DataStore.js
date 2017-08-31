@@ -13,7 +13,8 @@ class DataStore{
       getAll: this.getAll,
       getAllPages: this.getAllPages,
       getAllPosts: this.getAllPosts,
-      getPageBySlug: this.getPageBySlug
+      getPageBySlug: this.getPageBySlug,
+      getAllMenus: this.getAllMenus
     });
   }
 
@@ -29,6 +30,10 @@ class DataStore{
   //Returns all Pages
   getAllPages(){
     return this.getState().data.pages;
+  }
+
+  getAllMenus(){
+    return this.getState().data.menus;
   }
 
   //Return all posts

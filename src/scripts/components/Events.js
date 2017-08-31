@@ -79,7 +79,7 @@ class Events extends React.Component{
         <a className="home__btn home__btn-beige" href="#"></a>
         <a href="#" className="close-btn"></a>
         <div className="events__content">
-            <a onClick={(event)=>this.leftEventsArrowClick(event)} href="#" style={{zIndex: '5'}}  className="arrow arrow-left arrow-left-pos">left</a>
+            <a onClick={(event)=>this.leftEventsArrowClick(event)} href="#" style={{zIndex: '5'}}  className="arrow arrow-left arrow-left-pos"></a>
             <div style={{width: '84%', overflow: 'hidden', justifyContent: 'flex-start'}} className="events__wrap">
               {
                 posts.map((post, index)=>{
@@ -93,7 +93,7 @@ class Events extends React.Component{
               }
 
             </div>
-            <a onClick={(event)=>this.rightEventsArrowClick(event)} href="#" style={{zIndex: '5'}} className="arrow arrow-right arrow-right-pos">right</a>
+            <a onClick={(event)=>this.rightEventsArrowClick(event)} href="#" style={{zIndex: '5'}} className="arrow arrow-right arrow-right-pos"></a>
         </div>
     </div>
     </div>

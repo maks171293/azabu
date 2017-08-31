@@ -30,7 +30,6 @@ class DataActions {
     return true;
   }
 
-
   //Method for getting posts data
   getPosts(pages, cb){
     this.api(this.postsEndPoint).then((response)=>{
